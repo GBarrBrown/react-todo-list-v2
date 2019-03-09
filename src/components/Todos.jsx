@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { getTodos } from '../server/db/db'
+
 class Todos extends React.Component {
     constructor() {
         super()
@@ -10,6 +12,7 @@ class Todos extends React.Component {
 
     componentDidMount(){
         // fetch all todos from db
+        this.setState({todos: getTodos()})
     }
 
     render() {
