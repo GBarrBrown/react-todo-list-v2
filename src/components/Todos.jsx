@@ -18,7 +18,7 @@ class Todos extends React.Component {
                 <div className="Uncompleted">
                     uncompleted todo
                 </div>
-                <div className="Horizontal-Divider"></div>
+                <div className="Divider"></div>
                 <div className="Completed">
                     completed todo
                 </div>
